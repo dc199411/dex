@@ -1,7 +1,7 @@
 {
   "name": "@uniswap/interface",
   "description": "Uniswap Interface",
-  "homepage": "https://vgotcheva.github.io/dex",
+  "homepage": "https://dc199411.github.io/dex",
   "private": true,
   "devDependencies": {
     "@binance-chain/bsc-connector": "^1.0.0",
