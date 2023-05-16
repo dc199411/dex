@@ -6,7 +6,7 @@ import {
   TokenAmount,
   WETH,
   Pair
-} from '@violeta.at.bww/dex-course-u-exchange-sdk'
+} from '@dc1994/u-exchange-sdk'
 import { useMemo } from 'react'
 import { DAI, UNI, USDC, USDT, WBTC } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'

@@ -17,7 +17,7 @@ export const UNSUPPORTED_LIST_URLS: string[] = []
 // const CMC_STABLECOIN = 'stablecoin.cmc.eth'
 // const KLEROS_LIST = 't2crtokens.eth'
 //const GEMINI_LIST = 'https://www.gemini.com/uniswap/manifest.json'
-const UCASH_LIST = 'https://raw.githubusercontent.com/UdotCASH/u-exchange/main/src/constants/tokenLists/tokenList.json'
+const UCASH_LIST = 'https://raw.githubusercontent.com/MULTIVERSE-C2C/MverseX/scroll-showcase/src/constants/tokenLists/tokenlist.json'
 
 // lower index == higher priority for token import
 export const DEFAULT_LIST_OF_LISTS: string[] = [

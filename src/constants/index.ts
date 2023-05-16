@@ -2,13 +2,13 @@ import EthereumLogo from '../assets/images/ethereum-logo.png'
 import BinanceLogo from '../assets/svg/binance-logo.svg'
 import MaticLogo from '../assets/images/matic-logo.png'
 import RSKLogo from '../assets/images/rsk-logo.png'
-
-import { ChainId, JSBI, Percent, Token, WETH } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import KavaLogo from '../assets/images/kava-logo.png'
+import { ChainId, JSBI, Percent, Token, WETH } from '@dc1994/u-exchange-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 
-export const ROUTER_ADDRESS = '0x0D7b651E90c4579b01b84996B075c49a5E65B35A'
+export const ROUTER_ADDRESS = '0x6E1909Dce7e3A911A4d523f0e3700aCf7F7C3FcF'
 
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 
@@ -48,7 +48,8 @@ export const UNI: { [chainId in ChainId]: Token } = {
   [ChainId.BINANCE]: new Token(ChainId.BINANCE, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
   [ChainId.BINANCETEST]: new Token(ChainId.BINANCETEST, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
   [ChainId.XDAI]: new Token(ChainId.XDAI, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
-  [ChainId.POLYGON]: new Token(ChainId.POLYGON, UNI_ADDRESS, 18, 'UNI', 'Uniswap')
+  [ChainId.POLYGON]: new Token(ChainId.POLYGON, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
+  [ChainId.KAVA]: new Token(ChainId.KAVA, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),
 }
 
 const UCASH_Address = '0xeB0De4e9A7a89C4747597FDCBe1ec0a38a99eE89'
@@ -93,7 +94,14 @@ export const UCASH: { [chainId in ChainId]: Token } = {
     8,
     'UCASH',
     'Universal Cash'
-  )
+  ),
+  [ChainId.KAVA]: new Token(
+    ChainId.KAVA,
+    '0xe951e4c7b0b91447c1a0a46bfb46630682a3f229',
+    8,
+    'UCASH',
+    'Universal Cash'
+  ),
 }
 
 export const COMMON_CONTRACT_NAMES: { [address: string]: string } = {
@@ -118,7 +126,8 @@ const WETH_ONLY: ChainTokenList = {
   [ChainId.BINANCE]: [WETH[ChainId.BINANCE]],
   [ChainId.BINANCETEST]: [WETH[ChainId.BINANCETEST]],
   [ChainId.XDAI]: [WETH[ChainId.XDAI]],
-  [ChainId.POLYGON]: [WETH[ChainId.POLYGON]]
+  [ChainId.POLYGON]: [WETH[ChainId.POLYGON]],
+  [ChainId.KAVA]: [WETH[ChainId.KAVA]]
 }
 
 // used to construct intermediary pairs for trading
@@ -289,7 +298,8 @@ export const ALL_SUPPORTED_CHAIN_IDS: ChainId[] = [
   ChainId.BINANCE,
   ChainId.BINANCETEST,
   ChainId.XDAI,
-  ChainId.POLYGON
+  ChainId.POLYGON,
+  ChainId.KAVA
 ]
 
 export const L1_CHAIN_IDS = [
@@ -303,7 +313,8 @@ export const L1_CHAIN_IDS = [
   [ChainId.BINANCE],
   [ChainId.BINANCETEST],
   [ChainId.XDAI],
-  [ChainId.POLYGON]
+  [ChainId.POLYGON],
+  [ChainId.KAVA]
 ]
 
 export type SupportedL1ChainId = typeof L1_CHAIN_IDS[number]
@@ -387,11 +398,19 @@ export const CHAIN_INFO: ChainInfo = {
     nativeCurrency: { name: 'xDai', symbol: 'xDAI', decimals: 18 },
     rpcUrls: ['https://rpc.xdaichain.com/']
   },
+  [ChainId.KAVA]: {
+    label: 'KAVA',
+    logoUrl: KavaLogo,
+    explorer: 'https://explorer.kava.io/',
+    nativeCurrency: { name: 'KAVA', symbol: 'KAVA', decimals: 18 },
+    rpcUrls: ['https://evm.kava.io']
+  },
   [ChainId.POLYGON]: {
     label: 'Polygon Mainnet',
     logoUrl: MaticLogo,
     rpcUrls: ['https://rpc-mainnet.matic.network'],
     explorer: 'https://explorer.matic.network/',
-    nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 }
-  }
-}
+    nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 
+    }
+   }
+   }

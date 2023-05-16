@@ -1,4 +1,4 @@
-import { ChainId, TokenAmount } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { ChainId, TokenAmount } from '@dc1994/u-exchange-sdk'
 import React, { useState } from 'react'
 import { Text } from 'rebass'
 
@@ -320,7 +320,8 @@ const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
   [ChainId.RINKEBY]: 'Rinkeby',
   [ChainId.ROPSTEN]: 'Ropsten',
   [ChainId.GÖRLI]: 'Görli',
-  [ChainId.KOVAN]: 'Kovan'
+  [ChainId.KOVAN]: 'Kovan',
+  [ChainId.KAVA]: 'Kava'
 }
 
 export default function Header() {

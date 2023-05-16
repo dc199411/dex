@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { Currency, ETHER, Token } from '@dc1994/u-exchange-sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'ETH'

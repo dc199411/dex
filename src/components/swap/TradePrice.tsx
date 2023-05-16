@@ -1,5 +1,5 @@
 import React from 'react'
-import { Price } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { Price } from '@dc1994/u-exchange-sdk'
 import { useContext } from 'react'
 import { Repeat } from 'react-feather'
 import { Text } from 'rebass'

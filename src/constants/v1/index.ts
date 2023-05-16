@@ -1,5 +1,5 @@
 import { Interface } from '@ethersproject/abi'
-import { ChainId } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { ChainId } from '@dc1994/u-exchange-sdk'
 import V1_EXCHANGE_ABI from './v1_exchange.json'
 import V1_FACTORY_ABI from './v1_factory.json'
 
@@ -14,7 +14,8 @@ const V1_FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.BINANCE]: '0xD3E51Ef092B2845f10401a0159B2B96e8B6c3D30',
   [ChainId.BINANCETEST]: '0xD3E51Ef092B2845f10401a0159B2B96e8B6c3D30',
   [ChainId.XDAI]: '0xD3E51Ef092B2845f10401a0159B2B96e8B6c3D30',
-  [ChainId.POLYGON]: '0xD3E51Ef092B2845f10401a0159B2B96e8B6c3D30'
+  [ChainId.POLYGON]: '0xD3E51Ef092B2845f10401a0159B2B96e8B6c3D30',
+  [ChainId.KAVA]: '0x266F951c525130a4E230bB40F0e3525C6C99B9c5'
 }
 
 const V1_FACTORY_INTERFACE = new Interface(V1_FACTORY_ABI)

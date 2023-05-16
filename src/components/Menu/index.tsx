@@ -103,9 +103,9 @@ export default function Menu() {
 
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://discord.gg/Smm8zjEuyB">
+          <MenuItem id="link" href="https://fntokens.xyz">
             <MessageCircle size={14} />
-            Discord
+            Futures
           </MenuItem>
           <MenuItem id="link" href="https://info.u.exchange">
             <PieChart size={14} />

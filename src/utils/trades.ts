@@ -1,5 +1,6 @@
+
 import { ZERO_PERCENT, ONE_HUNDRED_PERCENT } from './../constants/index'
-import { Trade, Percent, currencyEquals } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { Trade, Percent, currencyEquals } from '@dc1994/u-exchange-sdk'
 
 // returns whether tradeB is better than tradeA by at least a threshold percentage amount
 export function isTradeBetter(

@@ -1,5 +1,5 @@
 import { UNI } from './../../constants/index'
-import { TokenAmount, JSBI, ChainId } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { TokenAmount, JSBI, ChainId } from '@dc1994/u-exchange-sdk'
 import { TransactionResponse } from '@ethersproject/providers'
 import { useEffect, useState } from 'react'
 import { useActiveWeb3React } from '../../hooks'

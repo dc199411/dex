@@ -1,10 +1,11 @@
-import { Currency, ETHER, Token } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { Currency, ETHER, Token } from '@dc1994/u-exchange-sdk'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
 import EthereumLogo from '../../assets/images/ethereum-logo.png'
 import BinanceLogo from '../../assets/svg/binance-logo.svg'
 import MaticLogo from '../../assets/images/matic-logo.png'
+import KavaLogo from '../../assets/images/kava-logo.png'
 
 import useHttpLocations from '../../hooks/useHttpLocations'
 import { WrappedTokenInfo } from '../../state/lists/hooks'
@@ -57,6 +58,9 @@ export default function CurrencyLogo({
     console.log(ETHER.symbol)
     if (ETHER.symbol === 'ETH') {
       return <StyledEthereumLogo src={EthereumLogo} size={size} style={style} />
+    }
+    if (ETHER.symbol === 'KAVA') {
+      return <StyledEthereumLogo src={KavaLogo} size={size} style={style} />
     }
     if (ETHER.symbol === 'BNB') {
       return <StyledEthereumLogo src={BinanceLogo} size={size} style={style} />

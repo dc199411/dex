@@ -204,6 +204,7 @@ export default function NetworkSelector() {
           <Row targetChain={SupportedChainId.BINANCE} />
           <Row targetChain={SupportedChainId.POLYGON} />
           <Row targetChain={SupportedChainId.RSK} />
+          <Row targetChain={SupportedChainId.KAVA} />
         </FlyoutMenu>
       )}
     </SelectorWrapper>

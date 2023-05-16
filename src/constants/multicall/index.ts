@@ -1,4 +1,4 @@
-import { ChainId } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { ChainId } from '@dc1994/u-exchange-sdk'
 import MULTICALL_ABI from './abi.json'
 
 const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {
@@ -12,7 +12,8 @@ const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {
   [ChainId.BINANCE]: '0x1Ee38d535d541c55C9dae27B12edf090C608E6Fb',
   [ChainId.BINANCETEST]: '0x1Ee38d535d541c55C9dae27B12edf090C608E6Fb',
   [ChainId.XDAI]: '0x0df07C4557311F779AD668aEaCdB61c9eB10dFf7',
-  [ChainId.POLYGON]: '0xa1B2b503959aedD81512C37e9dce48164ec6a94d'
+  [ChainId.POLYGON]: '0xa1B2b503959aedD81512C37e9dce48164ec6a94d',
+  [ChainId.KAVA]: '0x335675ad9d94634dbFdb83289317eEDAf9F15F3a'
 }
 
 export { MULTICALL_ABI, MULTICALL_NETWORKS }

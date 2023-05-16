@@ -1,4 +1,4 @@
-import { JSBI, Token } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { JSBI, Token } from '@dc1994/u-exchange-sdk'
 import React, { useCallback, useContext, useMemo, useState, useEffect } from 'react'
 import { ThemeContext } from 'styled-components'
 import { AutoColumn } from '../../components/Column'

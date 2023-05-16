@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { Trade, TradeType } from '@dc1994/u-exchange-sdk'
 import React, { useContext, useMemo } from 'react'
 import { ArrowDown, AlertTriangle } from 'react-feather'
 import { Text } from 'rebass'

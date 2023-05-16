@@ -1,6 +1,6 @@
 import { UNSUPPORTED_LIST_URLS } from './../../constants/lists'
 import DEFAULT_TOKEN_LIST from '@uniswap/default-token-list'
-import { ChainId, Token } from '@violeta.at.bww/dex-course-u-exchange-sdk'
+import { ChainId, Token } from '@dc1994/u-exchange-sdk'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
@@ -47,6 +47,7 @@ const EMPTY_LIST: TokenAddressMap = {
   [ChainId.BINANCE]: {},
   [ChainId.BINANCETEST]: {},
   [ChainId.XDAI]: {},
+  [ChainId.KAVA]: {},
   [ChainId.POLYGON]: {}
 }
 
@@ -108,6 +109,7 @@ function combineMaps(map1: TokenAddressMap, map2: TokenAddressMap): TokenAddress
     56: { ...map1[56], ...map2[56] },
     97: { ...map1[97], ...map2[97] },
     100: { ...map1[100], ...map2[100] },
+    2222: { ...map1[100], ...map2[2222] },
     137: { ...map1[137], ...map2[137] }
   }
 }

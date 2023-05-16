@@ -13,7 +13,7 @@ import {
   CurrencyAmount,
   Currency,
   ETHER
-} from '@violeta.at.bww/dex-course-u-exchange-sdk'
+} from '@dc1994/u-exchange-sdk'
 import { TokenAddressMap } from '../state/lists/hooks'
 
 // returns the checksummed address if the address is valid, otherwise returns false
@@ -36,7 +36,8 @@ const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
   56: 'bsc.',
   97: 'bsctest.',
   100: 'xdai.',
-  137: 'matic.'
+  137: 'matic.',
+  2222: 'kava.'
 }
 
 export function getEtherscanLink(
